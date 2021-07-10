@@ -49,7 +49,7 @@ CRUD interface:
 ### Get all items
 
 ```
-[GET] /api/item
+[GET] localhost:5000/api/item
 response =
 [
     {
@@ -68,7 +68,7 @@ response =
 ### Get item 2
 
 ```
-[GET] /api/item/2
+[GET] localhost:5000/api/item/2
 response =
 {
     "done": false,
@@ -80,7 +80,7 @@ response =
 ### Add an item
 
 ```
-[POST] /api/item
+[POST] localhost:5000/api/item
 request =
 {
     "text": "Go to the supermarket"
@@ -96,7 +96,7 @@ response =
 ### Set item 1 as done
 
 ```
-[PUT] /api/item/1
+[PUT] localhost:5000/api/item/1
 request =
 {
     "done": true
@@ -112,7 +112,7 @@ response =
 ### Delete item 1
 
 ```
-[DELETE] /api/item/1
+[DELETE] localhost:5000/api/item/1
 response =
 1
 ```
