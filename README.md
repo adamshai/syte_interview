@@ -7,7 +7,17 @@ A service to maintain a to do list
 ### One time setup
 
 ```
+# create a docker volume to persist the data
 docker volume create todo-list-db
+
+# build the docker image and bring up the container
+docker compose up --build --detach
+
+# create DB tables by calling HTTP request
+[GET] localhost:5000/reset_db
+
+# bring down the docker container
+docker compose down
 ```
 
 ### Start the service
@@ -32,6 +42,7 @@ CRUD interface:
 | Delete | DELETE            | /api/item/{id} | Deletes item {id} from the list |
 
 - HTTP request format should be JSON
+- All URLs should be prefixed with localhost:5000, e.g. [GET] localhost:5000/api/item
 
 ## Examples:
 
