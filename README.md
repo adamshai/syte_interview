@@ -14,7 +14,7 @@ docker volume create todo-list-db
 docker compose up --build --detach
 
 # create DB tables by calling HTTP request
-[GET] localhost:5000/reset_db
+curl localhost:5000/reset_db
 
 # bring down the docker container
 docker compose down
