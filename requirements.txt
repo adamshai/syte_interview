@@ -1,4 +1,4 @@
-Flask==2.0.1
+Flask==2.2.5
 flask-sqlalchemy==2.5.1
 wtforms==2.3.3
 pytest==6.2.4
